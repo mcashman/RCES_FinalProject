@@ -30,3 +30,7 @@ https://www.sciencedirect.com/science/article/pii/S0277379116301305?via%3Dihub
 
 Database:
 https://ars.els-cdn.com/content/image/1-s2.0-S0277379116301305-mmc2.xlsx
+
+### Binder link
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mcashman/RCES_FinalProject/master)
+
