@@ -1,35 +1,20 @@
 ## RCES 2018 Final Project
-
-## A sea level curve for Barbados over MIS 5
 ### Miranda Cashman
 
+## Last Interglacial sea level at Barbados: Can we constrain melt contributions from Greenland and Antarctica?
+
 ### Introduction/Intellectual Merit:
-Future sea level predictions depend on accurate and high resolution reconstructions of sea level during past warm periods.  To reconstruct sea level in the past, we identify, sample, and measure 'sea level indicators' - geologic evidence of where past sea levels were compared to modern.  Fossil corals are widely used sea level indicators becacuse they are easily dateable with isotopic methods.  Compiling many sea level indicator data can yield a sea level curve, which aims to reconstruct sea level in the past thorugh time, which can ultimately constrain future sea level model outputs.  
+Reconstructions of global mean sea level (GMSL) for the Last Interglacial indicate that sea level may have been between 6 and 9 m higher than today. Better constraining sea level over the Last Interglacial will help constrain models of future sea level rise. A large contributer to the uncertainty in Last Interglacial sea level is that the melt contribution from the Greenland and Antarctic ice sheets is unknown. 
 
-### Proposed Project:
-I propose to construct a sea level curve for Barbados from existing coral data compiled in the Hibbert et al., 2016 repository of global coral sea level indicators.  I choose to only focus on Barbados during MIS 5 for the scope of this project.  MIS 5 is a period show to have a lot of suborbital frequency, and by resolving sea level over this interval, we may better understand ice sheet stability and response to warming climate through an interglacial-glacial transition.  While my analysis is not replicating one specific paper's analysis, I will be performing an analysis similar to many that have been previously published at different sites worldwide.  Thompson and Goldstein, for example, created a Barbados sea level curve in 2005, but my analysis will add more coral data than their study used, and will seek to understand how changing different assumptions about past sea level influences the sea level curve reconstruction.  I chose Barbados as my location of focus because when I have processed my own samples from Barbados I can perform the same analysis on my own data.
-
-I will follow methods similar to those described in Thompson and Goldstein 2005, O'Leary et al., 2013, and Cutler et al., 2003:
-- Load the data via pandas from csv format
-- Clean the data set to be more easily manipulated in python
-- Filter the data to relavent data points (i.e. Barbados, and corals dating to MIS 5)
-- Apply an open system correction to data points that indicated diagenetic alteration (this yields a more accurate age date)
-- Calculate uplift rate (this parameter can change under different assumptions, a few of which I plan to test - i.e. create different sea level curves under different tectonic uplift rates)
-- Fit a curve to the data points preferentially fitting the highest elevation points and considering data 'holes' to be representative of sea level lowstands or stillstands 
-- Propogate error through the calculations and combinations
-- Vary parameters and assumptions and (maybe) vary the filtering restrictions to see how the sea level curves change with different inputs
-
-### Deliverable:
-- Maps of Barbados showing sample location
-- Figure showing the variability in different parameters based on how constrained/unconstrained our assumptions about the past are.
-- Multiple sea level curves that display how changing our assumptions on uplift and how we filter data can influence the output of sea level reconstructions and thereby predictions.  
+### Project:
+I used the Hibbert et al., 2016 fossil coral database for sea level reconstructions to test 12 likely melt scenarios for the Last Interglacial, each with different melt contributions from the Greenland and Antarctic ice sheets. Fossil coral reefs are commonly used as sea level indicators because corals grow close to the sea surface and can be dated by U/Th methods. I tested the 12 melt scenarios on two datasets: first, Barbados MIS 5 fossil coral data, and second, a subset of the Barbados MIS 5 dataset that looks only at corals thought to be pristine (higher confidence in the U/Th age). When testing the entire dataset against the 12 melt scenarios, 2 of the scenarios appear to not match the geologic evidence. However, the results of the second filtered dataset yield dramatically different results, indicating that all 12 of the melt scenarios agree with the geologic evidence. I explain the difference in results to a lack of pristine dates for Barbados. A more robust dataset of pristine coral dates would reduce the weight of outliers, while also maintaining high confidence in the age data.
 
 ### Data:
 Hibbert et al., 2016
 https://www.sciencedirect.com/science/article/pii/S0277379116301305?via%3Dihub
 
 Database:
-https://ars.els-cdn.com/content/image/1-s2.0-S0277379116301305-mmc2.xlsx
+https://ars.els-cdn.com/content/image/1-s2.0-S0277379116301305-mmc1.xlsx
 
 ### Binder link
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mcashman/RCES_FinalProject/master)
